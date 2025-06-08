@@ -4,6 +4,7 @@ public class Main {
         task2();
         task3(2025,12_000_000,1000,17,8);
         task4(15000);
+        task5(15000);
 
 
     }
@@ -51,6 +52,18 @@ public class Main {
             i++;
             contribution = contribution + (contribution * 7) / 100;
         }
+    }
+
+
+    public static void task5 ( int contribution ) {
+        int i = 1;
+        for (; contribution <= 12_000_000; i++) {
+            contribution = contribution + (contribution * 7) / 100;
+            if (i % 6 == 0){
+            System.out.println ("Месяц " + i + ", сумма накоплений составляет " + contribution + " рублей");
+
+
+        }}
     }
 
 
