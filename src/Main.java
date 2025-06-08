@@ -3,6 +3,7 @@ public class Main {
         task1(15000);
         task2();
         task3(2025,12_000_000,1000,17,8);
+        task4(15000);
 
 
     }
@@ -38,6 +39,17 @@ public class Main {
             System.out.println("Год " + year + ", численность населения составляет " + population + " человек");
             year++;
             population = population + populationGrowth;
+        }
+    }
+
+
+
+    public static void task4 ( int contribution ) {
+        int i = 1;
+        while ( contribution <= 12_000_000 ) {
+            System.out.println("Месяц " + i + ", сумма накоплений составляет " + contribution + " рублей");
+            i++;
+            contribution = contribution + (contribution * 7) / 100;
         }
     }
 
